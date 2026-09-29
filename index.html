@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Etec</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar img {
+            height: 80px;
+            margin-left: 10px;
+        }
+        
+        .navbar-brand {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .introducao {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .linha-vermelha {
+            width: 100px;
+            height: 3px;
+            background-color: #dc3545;
+            margin: 20px auto;
+            border: none;
+        }
+
+        .secao-meio {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .coluna-cursos { flex: 2; min-width: 300px; }
+        .coluna-acesso { flex: 1; min-width: 250px; }
+
+        .grade-curricular h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid-anos {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card-ano {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 310px;
+            border-top: 6px solid #dc3545;
+            transition: 0.3s;
+        }
+
+        .card-ano:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .card-ano h4 {
+            color: #dc3545;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        details.materia {
+            margin-bottom: 10px;
+        }
+
+        summary.materia-titulo {
+            background-color: #f8f9fa;
+            padding: 10px 12px;
+            border-radius: 5px;
+            border-left: 4px solid #0d6efd;
+            font-size: 14px;
+            font-weight: bold;
+            color: #444;
+            cursor: pointer;
+            list-style: none;
+            transition: 0.2s;
+        }
+
+        summary.materia-titulo:hover {
+            background-color: #e2e6ea;
+        }
+
+        .card-body {
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #e3e6f0;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-left: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .card-title {
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #212529;
+        }
+
+        .card-subtitle {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .text-muted {
+            color: #6c757d;
+        }
+
+        .card-text {
+            color: #444;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a class="navbar-brand" href="#">
+                Etec
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm98Bosan61p7lJHL3Rtn8Pz7q8YkFmYqgvTwgnhdJtA&s=10" alt="Logo da Etec">
+            </a>
+        </div>
+    </header>
+
+    <div class="container introducao">
+        <h2>Introdução - Desenvolvimento de Sistemas</h2>
+        <h4>Bem-vindo à Etec de Itanhaém</h4>
+        <p>
+            A Escola Técnica Estadual (Etec) é uma instituição de ensino público e gratuito mantida pelo Centro
+            Paula Souza. Nosso compromisso é oferecer educação de excelência, unindo o Ensino Médio à formação
+            profissional técnica. Preparamos nossos alunos para os desafios do mercado de trabalho e para o futuro.
+        </p>
+        <hr class="linha-vermelha">
+    </div>
+
+    <div class="container secao-meio">
+        <div class="coluna-cursos">
+            <h2>Nossos Cursos</h2>
+            <a href="PW1.html">PW 1</a>
+            <a href="BD1_ano.html">BD 1</a>
+            <a href="PW2_ano.html">PW 2</a>
+            <a href="DS2_ano.html">DS 2</a>
+            <a href="APPM2_amo.html">Aplicativo Mobile</a>
+
+        </div>
+
+        <div class="coluna-acesso">
+            <h2>Acesso Rápido</h2>
+        </div>
+    </div>
+
+    <section class="container grade-curricular">
+        <h2>Matérias Técnicas</h2>
+        
+        <div class="grid-anos">
+             
+            <div class="card-ano">
+                <h4>1º Ano</h4>
+                
+                <details class="materia">
+
+                    <summary class="materia-titulo"> <a href="PW1.html">Programação Web 1</a></summary>
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Aprenda a criar páginas para a internet usando as linguagens base: HTML e CSS</p>
+                    </div>
+                </details>
+
+                <details class="materia">
+                    <summary class="materia-titulo">Banco de Dados 1</summary>
+                    <div class="card-body">
+                        <h4 class="card-title">Banco de Dados 1</h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Descubra como os sistemas armazenam, organizam e protegem as informações dos usuários</p>
+                    </div>
+                </details>
+            </div>
+
+
+            <div class="card-ano">
+                <h4>2º Ano</h4>
+                
+                <details class="materia">
+                    <summary class="materia-titulo">Programação Web 2</summary>
+                    <div class="card-body">
+                        <h4 class="card-title">Programação Web 2</h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Construa sites dinâmicos que conversam com o servidor e com banco de dados</p>
+                    </div>
+                </details>
+
+                <details class="materia">
+                    <summary class="materia-titulo">Desenv. de Sistemas I</summary>
+                    <div class="card-body">
+                        <h4 class="card-title">Desenv. de Sistemas I</h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Criação de softwares voltados para gestão e rotinas de empresas</p>
+                    </div>
+                </details>
+                
+                <details class="materia">
+                    <summary class="materia-titulo">Aplicativos Mobile I</summary>
+                    <div class="card-body">
+                        <h4 class="card-title">Aplicativos Mobile I</h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Introdução ao desenvolvimento de aplicativos para dispositivos móveis</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="card-ano">
+                <h4>3º Ano</h4>
+                
+                <details class="materia">
+                    <summary class="materia-titulo">Programação Web III</summary>
+                    <div class="card-body">
+                        <h4 class="card-title">Programação Web III</h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Desenvolvimento avançado de aplicações web</p>
+                    </div>
+                </details>
+
+                <details class="materia">
+                    <summary class="materia-titulo">Desenv. de Sistemas II</summary>
+                    <div class="card-body">
+                        <h4 class="card-title">Desenv. de Sistemas II</h4>
+                        <h6 class="card-subtitle text-muted">Aulas Práticas</h6>
+                        <p class="card-text">Aprofundamento na criação de softwares complexos e arquitetura de sistemas</p>
+                    </div>
+                </details>
+
+             
+            </div>
+            
+        </div> 
+    </section> 
+
+    <footer>
+        <div class="container">
+            <p>Endereço da Etec de Itanhaém - SP | Telefone: (13) 0000-0000</p>
+        </div>
+    </footer>
+
+</body>
+</html>

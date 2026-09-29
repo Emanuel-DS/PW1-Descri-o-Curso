@@ -1,0 +1,130 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar img {
+            height: 80px;
+            margin-left: 10px;
+        }
+        .navbar-brand {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .introducao {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .introducao h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .introducao h4 {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .introducao p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .linha-vermelha {
+            width: 100px;
+            height: 3px;
+            background-color: #dc3545;
+            margin: 20px auto;
+            border: none;
+        }
+
+        .secao-meio {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        .coluna-cursos {
+            flex: 2; 
+            min-width: 300px;
+        }
+        .coluna-acesso {
+            flex: 1; 
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .grade-curricular h2 {
+            text-align: center;
+        }
+        .titulo-ano {
+            color: #0d6efd;
+            margin: 30px 0 10px 0;
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 5px;
+        }
+        
+        details {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        summary {
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+        }
+        .texto-vermelho {
+            color: #dc3545;
+        }
+        .conteudo-details {
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .conteudo-details ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
